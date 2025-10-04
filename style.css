@@ -1,0 +1,107 @@
+:root {
+  --primary: #3b82f6;   /* azul */
+  --secondary: #1e293b; /* cinza escuro */
+  --bg: #f1f5f9;        /* fundo */
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: var(--white);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* MAIN */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h2, .card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* NEWS */
+.noticia {
+  border-left: 5px solid var(--primary);
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* FORM */
+form input, form textarea, form button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form button {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  background: var(--secondary);
+  color: var(--white);
+  margin-top: 30px;
+}
